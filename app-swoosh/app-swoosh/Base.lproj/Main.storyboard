@@ -167,7 +167,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SU6-uY-RmN" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" highlighted="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SU6-uY-RmN" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
                                 <rect key="frame" x="16" y="482" width="288" height="66"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -183,7 +183,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A4B-q4-6Ct">
-                                <rect key="frame" x="16" y="10" width="29" height="24"/>
+                                <rect key="frame" x="16" y="30" width="29" height="24"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="24" id="Py1-y2-gYf"/>
                                     <constraint firstAttribute="width" constant="29" id="b0m-0b-lio"/>
@@ -209,13 +209,14 @@
                             <constraint firstItem="TQa-nU-pTs" firstAttribute="leading" secondItem="ugv-Nn-lIk" secondAttribute="leading" constant="16" id="hMw-aj-GSR"/>
                             <constraint firstItem="TQa-nU-pTs" firstAttribute="top" secondItem="OVb-jb-vfh" secondAttribute="bottom" constant="50" id="l9c-VO-7Wz"/>
                             <constraint firstItem="A4B-q4-6Ct" firstAttribute="leading" secondItem="ugv-Nn-lIk" secondAttribute="leading" constant="16" id="lHE-qd-g4p"/>
-                            <constraint firstItem="A4B-q4-6Ct" firstAttribute="top" secondItem="Wlm-I2-gDL" secondAttribute="top" constant="10" id="mAe-v0-1sG"/>
+                            <constraint firstItem="A4B-q4-6Ct" firstAttribute="top" secondItem="Wlm-I2-gDL" secondAttribute="top" constant="30" id="mAe-v0-1sG"/>
                             <constraint firstItem="OVb-jb-vfh" firstAttribute="leading" secondItem="ugv-Nn-lIk" secondAttribute="leading" id="s32-ds-86A"/>
                             <constraint firstItem="RrF-U6-uRX" firstAttribute="trailing" secondItem="ugv-Nn-lIk" secondAttribute="trailing" id="yYT-L4-TPB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ugv-Nn-lIk"/>
                     </view>
                     <connections>
+                        <outlet property="nextBtn" destination="SU6-uY-RmN" id="z4V-MB-NHx"/>
                         <segue destination="H4m-Zu-qB8" kind="show" identifier="skillVCSegue" id="VQM-X9-kPM"/>
                     </connections>
                 </viewController>
